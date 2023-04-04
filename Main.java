@@ -69,7 +69,7 @@ class SingleThread extends Thread{
 		
 		//array size that holds 2 million
 		Utility utility = new Utility();
-		int[] randNum = utility.randomNumbers(20000000);
+		int[] randNum = utility.randomNumbers(200000000);
 		double time = System.nanoTime(); //begin the time in nanoseconds
 		int sts = singleThreadSum(randNum);
 		time = System.nanoTime() - time;//end time the nanoseconds took to finish
@@ -95,7 +95,7 @@ class ParallelThread extends Thread{
 		
 		//array size that holds 2 million
 		Utility utility = new Utility();
-		int[] randNum = utility.randomNumbers(20000000);
+		int[] randNum = utility.randomNumbers(200000000);
 		double time = System.nanoTime(); //begin the time in nanoseconds
 		int sts = parallelSum(randNum);
 		time = System.nanoTime() - time;//end time the nanoseconds took to finish
